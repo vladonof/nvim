@@ -15,6 +15,8 @@ require "paq" {
     'windwp/nvim-ts-autotag';
     'beauwilliams/focus.nvim';
     'jose-elias-alvarez/nvim-lsp-ts-utils';
+    'jose-elias-alvarez/null-ls.nvim';
+    'MunifTanjim/prettier.nvim';
     {'nvim-telescope/telescope-fzf-native.nvim', run = 'make' };
 }
 
@@ -24,3 +26,4 @@ require('maps')
 require('telescope-config')
 require('lualine').setup()
 require('lsp-config')
+require('prettier-config')
