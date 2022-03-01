@@ -1,0 +1,15 @@
+{
+  "prettier.requireConfig": true,
+  "eslint.enable": true,
+  "eslint.autoFixOnSave": true,
+  "prettier.resolveGlobalModules": true,
+  "coc.preferences.formatOnSaveFiletypes": [
+    "css",
+    "markdown",
+    "Markdown",
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ]
+}
