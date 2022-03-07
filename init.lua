@@ -17,12 +17,14 @@ require "paq" {
     'jose-elias-alvarez/nvim-lsp-ts-utils';
     'jose-elias-alvarez/null-ls.nvim';
     'MunifTanjim/prettier.nvim';
-    {'nvim-telescope/telescope-fzf-native.nvim', run = 'make' };
     'hrsh7th/cmp-nvim-lsp';
     'hrsh7th/cmp-buffer';
     'hrsh7th/cmp-path';
     'hrsh7th/cmp-cmdline';
     'hrsh7th/nvim-cmp';
+    'hrsh7th/vim-vsnip';
+    'hrsh7th/vim-vsnip-integ';
+    {'ibhagwan/fzf-lua', run = './install --bin'};
 }
 
 require('basics')

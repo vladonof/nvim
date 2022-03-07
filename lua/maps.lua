@@ -14,7 +14,7 @@ vim.api.nvim_set_keymap('n', 'to', ':tabo<CR>', { noremap = true })
 
 -- UTILS
 vim.api.nvim_set_keymap('n', '<C-S>', ':%s/', { noremap = true })
-vim.api.nvim_set_keymap('n', '<C-F>', ":Telescope grep_string<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<C-F>', "<cmd>lua require('fzf-lua').live_grep_native()<CR>", { noremap = true, silent = true })
 
 -- NVIM-TREE
 vim.api.nvim_set_keymap("n", "<C-n>", ":NvimTreeToggle<CR>", {noremap = true, silent = true})
