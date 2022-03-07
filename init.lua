@@ -25,6 +25,8 @@ require "paq" {
     'hrsh7th/vim-vsnip';
     'hrsh7th/vim-vsnip-integ';
     {'ibhagwan/fzf-lua', run = './install --bin'};
+    'f-person/git-blame.nvim';
+    'Asheq/close-buffers.vim';
 }
 
 require('basics')

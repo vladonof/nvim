@@ -26,3 +26,6 @@ vim.api.nvim_set_keymap('n', '<C-P>', "<cmd>lua require('telescope.builtin').fin
 vim.api.nvim_set_keymap('n', '<C-B>', "<cmd>lua require('telescope.builtin').buffers()<CR>", { noremap = true })
 vim.api.nvim_set_keymap('n', '<C-T>', "<cmd>lua require('telescope').extensions.git_worktree.git_worktrees()<CR>", { noremap = true })
 
+-- BUFFEERS
+vim.api.nvim_set_keymap("n", "bo", ":Bdelete other<CR>", {noremap = true, silent = true})
+vim.api.nvim_set_keymap("n", "bh", ":Bdelete hidden<CR>", {noremap = true, silent = true})
