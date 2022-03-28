@@ -10,7 +10,6 @@ require "paq" {
     'nvim-telescope/telescope.nvim';
     {'nvim-telescope/telescope-fzf-native.nvim', run = 'make'};
     'nvim-lua/plenary.nvim';
-    'ibhagwan/fzf-lua';
     'kyazdani42/nvim-tree.lua';
     'windwp/nvim-ts-autotag';
     'beauwilliams/focus.nvim';
@@ -24,9 +23,11 @@ require "paq" {
     'hrsh7th/nvim-cmp';
     'hrsh7th/vim-vsnip';
     'hrsh7th/vim-vsnip-integ';
-    {'ibhagwan/fzf-lua', run = './install --bin'};
     'f-person/git-blame.nvim';
     'Asheq/close-buffers.vim';
+    'mangelozzi/nvim-rgflow.lua';
+    { 'junegunn/fzf', run = './install --bin', };
+    'junegunn/fzf.vim';
 }
 
 require('basics')

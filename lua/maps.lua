@@ -14,7 +14,7 @@ vim.api.nvim_set_keymap('n', 'to', ':tabo<CR>', { noremap = true })
 
 -- UTILS
 vim.api.nvim_set_keymap('n', '<C-S>', ':%s/', { noremap = true })
-vim.api.nvim_set_keymap('n', '<C-F>', "<cmd>lua require('fzf-lua').live_grep_native()<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<C-F>', ":Rg<CR>", { noremap = true, silent = true })
 
 -- NVIM-TREE
 vim.api.nvim_set_keymap("n", "<C-n>", ":NvimTreeToggle<CR>", {noremap = true, silent = true})
@@ -27,5 +27,5 @@ vim.api.nvim_set_keymap('n', '<C-B>', "<cmd>lua require('telescope.builtin').buf
 vim.api.nvim_set_keymap('n', '<C-T>', "<cmd>lua require('telescope').extensions.git_worktree.git_worktrees()<CR>", { noremap = true })
 
 -- BUFFEERS
-vim.api.nvim_set_keymap("n", "bo", ":Bdelete other<CR>", {noremap = true, silent = true})
-vim.api.nvim_set_keymap("n", "bh", ":Bdelete hidden<CR>", {noremap = true, silent = true})
+vim.api.nvim_set_keymap("n", "go", ":Bdelete other<CR>", {noremap = true, silent = true})
+vim.api.nvim_set_keymap("n", "gh", ":Bdelete hidden<CR>", {noremap = true, silent = true})
