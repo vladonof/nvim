@@ -28,6 +28,7 @@ require "paq" {
     'mangelozzi/nvim-rgflow.lua';
     { 'junegunn/fzf', run = './install --bin', };
     'junegunn/fzf.vim';
+    'hashivim/vim-terraform';
 }
 
 require('basics')

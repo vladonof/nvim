@@ -3,13 +3,9 @@ local prettier = require("prettier")
 
 null_ls.setup({
   on_attach = function(client, bufnr)
-    if client.resolved_capabilities.document_formatting then
-      vim.cmd("nnoremap <silent><buffer> <Leader>f :lua vim.lsp.buf.formatting()<CR>")
-      -- format on save
-      vim.cmd("autocmd BufWritePost <buffer> lua vim.lsp.buf.formatting()")
-    end
+      vim.cmd("nnoremap <silent><buffer> <Leader>f :lua vim.lsp.buf.format {async = true}<CR>")
 
-    if client.resolved_capabilities.document_range_formatting then
+    if client.server_capabilities.document_range_formatting then
       vim.cmd("xnoremap <silent><buffer> <Leader>f :lua vim.lsp.buf.range_formatting({})<CR>")
     end
   end,
@@ -38,15 +34,12 @@ prettier.setup({
   embedded_language_formatting = "auto",
   end_of_line = "lf",
   html_whitespace_sensitivity = "css",
-  jsx_bracket_same_line = false,
-  jsx_single_quote = false,
+--  jsx_bracket_same_line = false,
+--  jsx_single_quote = false,
   print_width = 80,
   prose_wrap = "preserve",
-  quote_props = "as-needed",
-  semi = false,
-  single_quote = true,
-  tab_width = 2,
-  trailing_comma = "all",
-  use_tabs = false,
-  vue_indent_script_and_style = false,
+ quote_props = "as-needed",
+  trailing_comma = "es5",
+--  use_tabs = false,
+--  vue_indent_script_and_style = false,
 })
