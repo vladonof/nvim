@@ -16,7 +16,7 @@ local on_attach = function(client, bufnr)
     vim.cmd("command! LspDiagNext lua vim.diagnostic.goto_next()")
     vim.cmd("command! LspDiagLine lua vim.diagnostic.open_float()")
     vim.cmd("command! LspSignatureHelp lua vim.lsp.buf.signature_help()")
-    vim.cmd("command! LspLineDiagnostics lua vim.lsp.diagnostic.show_line_diagnostics()")
+    vim.cmd("command! LspLineDiagnostics lua vim.diagnostic.open_float()")
     buf_map(bufnr, "n", "<C-e>", ":LspLineDiagnostics<CR>")
     buf_map(bufnr, "n", "gd", ":LspDef<CR>")
     buf_map(bufnr, "n", "<leader>r", ":LspRename<CR>")
@@ -30,7 +30,7 @@ local on_attach = function(client, bufnr)
     buf_map(bufnr, "i", "<C-x><C-x>", "<cmd> LspSignatureHelp<CR>")
 end
 
-local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
+local capabilities = require('cmp_nvim_lsp').default_capabilities(vim.lsp.protocol.make_client_capabilities())
 
 lspconfig.tsserver.setup({
     capatilities = capabilities,
@@ -48,3 +48,4 @@ lspconfig.tsserver.setup({
 })
 
 
+require("trouble").setup {}

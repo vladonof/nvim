@@ -29,6 +29,8 @@ require "paq" {
     { 'junegunn/fzf', run = './install --bin', };
     'junegunn/fzf.vim';
     'hashivim/vim-terraform';
+    'folke/trouble.nvim';
+    {'mg979/vim-visual-multi', branch= 'master'};
 }
 
 require('basics')
