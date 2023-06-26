@@ -31,6 +31,7 @@ require "paq" {
     'hashivim/vim-terraform';
     'folke/trouble.nvim';
     {'mg979/vim-visual-multi', branch= 'master'};
+--    'jparise/vim-graphql';
 }
 
 require('basics')

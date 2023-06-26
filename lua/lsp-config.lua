@@ -34,6 +34,7 @@ local capabilities = require('cmp_nvim_lsp').default_capabilities(vim.lsp.protoc
 
 lspconfig.tsserver.setup({
     capatilities = capabilities,
+    filetypes = { "typescript", "typescriptreact", "typescript.tsx" },
     on_attach = function(client, bufnr)
         client.server_capabilities.document_formatting = false
         client.server_capabilities.document_range_formatting = false
@@ -46,6 +47,8 @@ lspconfig.tsserver.setup({
         on_attach(client, bufnr)
     end,
 })
+
+lspconfig.graphql.setup{}
 
 
 require("trouble").setup {}
