@@ -13,11 +13,11 @@ vim.api.nvim_set_keymap('n', 'tj', ':tabprev<CR>', { noremap = true })
 vim.api.nvim_set_keymap('n', 'to', ':tabo<CR>', { noremap = true })
 
 -- UTILS
-vim.api.nvim_set_keymap('n', '<C-S>', ':%s/', { noremap = true })
+vim.api.nvim_set_keymap('n', '<C-x>', ':%s/', { noremap = true })
 vim.api.nvim_set_keymap('n', '<C-F>', ":Rg<CR>", { noremap = true, silent = true })
 
 -- NVIM-TREE
-vim.api.nvim_set_keymap("n", "<C-m>", ":NvimTreeToggle<CR>", {noremap = true, silent = true})
+vim.api.nvim_set_keymap("n", "<C-l>", ":NvimTreeToggle<CR>", {noremap = true, silent = true})
 vim.api.nvim_set_keymap("n", "<leader>r", ":NvimTreeRefresh<CR>", {noremap = true, silent = true})
 vim.api.nvim_set_keymap("n", "<leader>n", ":NvimTreeFindFile<CR>", {noremap = true, silent = true})
 

@@ -219,6 +219,11 @@ _G.packer_plugins = {
     path = "/Users/vladonof/.local/share/nvim/site/pack/packer/start/trouble.nvim",
     url = "https://github.com/folke/trouble.nvim"
   },
+  ["vim-apm"] = {
+    loaded = true,
+    path = "/Users/vladonof/.local/share/nvim/site/pack/packer/start/vim-apm",
+    url = "https://github.com/ThePrimeagen/vim-apm"
+  },
   ["vim-closer"] = {
     loaded = true,
     path = "/Users/vladonof/.local/share/nvim/site/pack/packer/start/vim-closer",

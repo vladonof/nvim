@@ -49,6 +49,7 @@ lspconfig.tsserver.setup({
 })
 
 lspconfig.graphql.setup{}
+lspconfig.gopls.setup({})
 
 
 require("trouble").setup {}

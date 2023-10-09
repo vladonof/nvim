@@ -53,5 +53,6 @@ return require('packer').startup(function(use)
    use 'folke/trouble.nvim'
    use {'mg979/vim-visual-multi', branch= 'master'}
   use 'ggandor/lightspeed.nvim'
+  use 'ThePrimeagen/vim-apm'
 
 end)
