@@ -114,11 +114,6 @@ _G.packer_plugins = {
     path = "/Users/vladonof/.local/share/nvim/site/pack/packer/start/fzf.vim",
     url = "https://github.com/junegunn/fzf.vim"
   },
-  ["git-blame.nvim"] = {
-    loaded = true,
-    path = "/Users/vladonof/.local/share/nvim/site/pack/packer/start/git-blame.nvim",
-    url = "https://github.com/f-person/git-blame.nvim"
-  },
   ["lightspeed.nvim"] = {
     loaded = true,
     path = "/Users/vladonof/.local/share/nvim/site/pack/packer/start/lightspeed.nvim",
@@ -218,11 +213,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/vladonof/.local/share/nvim/site/pack/packer/start/trouble.nvim",
     url = "https://github.com/folke/trouble.nvim"
-  },
-  ["vim-apm"] = {
-    loaded = true,
-    path = "/Users/vladonof/.local/share/nvim/site/pack/packer/start/vim-apm",
-    url = "https://github.com/ThePrimeagen/vim-apm"
   },
   ["vim-closer"] = {
     loaded = true,

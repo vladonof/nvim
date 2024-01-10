@@ -18,7 +18,7 @@ return require('packer').startup(function(use)
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
 
-  -- Simple plugins can be specified as strings
+
   use 'rstacruz/vim-closer'
   use  "savq/paq-nvim"
   use  "neovim/nvim-lspconfig"
@@ -44,7 +44,7 @@ return require('packer').startup(function(use)
    use 'hrsh7th/nvim-cmp'
    use 'hrsh7th/vim-vsnip'
    use 'hrsh7th/vim-vsnip-integ'
-   use 'f-person/git-blame.nvim'
+   -- use 'f-person/git-blame.nvim'
    use 'Asheq/close-buffers.vim'
    use 'mangelozzi/nvim-rgflow.lua'
    use { 'junegunn/fzf', run = './install --bin', }
@@ -53,6 +53,5 @@ return require('packer').startup(function(use)
    use 'folke/trouble.nvim'
    use {'mg979/vim-visual-multi', branch= 'master'}
   use 'ggandor/lightspeed.nvim'
-  use 'ThePrimeagen/vim-apm'
-
 end)
+

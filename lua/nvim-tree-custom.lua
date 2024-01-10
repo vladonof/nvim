@@ -1,5 +1,5 @@
 require'nvim-treesitter'.setup {
-  ensure_installed = "maintained",
+  ensure_installed = "all",
   context_commentstring = {
     enable = true
   },
@@ -19,8 +19,6 @@ require'nvim-treesitter'.setup {
 require'nvim-tree'.setup {
   disable_netrw        = false,
   hijack_netrw         = true,
-  open_on_setup        = false,
-  ignore_ft_on_setup   = {},
   auto_reload_on_write = true,
   open_on_tab          = false,
   hijack_cursor        = false,
@@ -59,13 +57,8 @@ require'nvim-tree'.setup {
   },
   view = {
     width = 30,
-    hide_root_folder = false,
     side = 'left',
     preserve_window_proportions = false,
-    mappings = {
-      custom_only = false,
-      list = {}
-    },
     number = false,
     relativenumber = false,
     signcolumn = "yes"
