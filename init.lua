@@ -1,4 +1,3 @@
-
 require('basics')
 require('nvim-tree-custom')
 require('maps')
@@ -17,8 +16,6 @@ vim.cmd [[packadd packer.nvim]]
 return require('packer').startup(function(use)
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
-
-
   use 'rstacruz/vim-closer'
   use  "savq/paq-nvim"
   use  "neovim/nvim-lspconfig"
@@ -44,7 +41,6 @@ return require('packer').startup(function(use)
    use 'hrsh7th/nvim-cmp'
    use 'hrsh7th/vim-vsnip'
    use 'hrsh7th/vim-vsnip-integ'
-   -- use 'f-person/git-blame.nvim'
    use 'Asheq/close-buffers.vim'
    use 'mangelozzi/nvim-rgflow.lua'
    use { 'junegunn/fzf', run = './install --bin', }
@@ -52,6 +48,9 @@ return require('packer').startup(function(use)
    use 'hashivim/vim-terraform'
    use 'folke/trouble.nvim'
    use {'mg979/vim-visual-multi', branch= 'master'}
-  use 'ggandor/lightspeed.nvim'
+   use 'ggandor/lightspeed.nvim'
+   use 'williamboman/mason.nvim'    
+   use 'williamboman/mason-lspconfig.nvim'
+  use 'simrat39/rust-tools.nvim'
 end)
 
