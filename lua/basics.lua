@@ -1,5 +1,6 @@
 -- VIM SETTINGS
 vim.g.mapleader = ","
+vim.opt.shell = 'zsh'
 vim.o.number  =true
 vim.o.relativenumber = true
 vim.o.wrap = false
